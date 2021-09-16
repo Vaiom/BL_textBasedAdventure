@@ -1,33 +1,69 @@
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+#---------------------------------------------------
+# Python Pseudocode - Text-Based Adventure Game (Seven Flights)
+# Bryant Liu
+# September #, 2021
+#---------------------------------------------------
+
+
+# Goals:
+# - 7 endings
+# - include a system that can increase/decrease the likelihood of a specific situation(s) happening, based on your choices in the story.
+# - use a loop as the "core" of the program
+
+
+
+
+"""
+Main Story:
+
+You and a crewmate are stranded on a unknown alien spaceship.
+You and your crewmate decided to split off.
+Your objective is to find any means escaping the spaceship.
+
+"""
+
+
+
+##########################################################################################################pseudocode the main function of the game.
+
+// let user_inventory = (...) < - list
+# Have a list that stores objects/items into the user's inventory (default would be none)
+
+// have a dictionary called - items = {...} < - dictionary
+# Have a dictionary that stores items with respective items.
+
+// let variable = a
+#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)
+
+#negative leads to more dangerous situations, positive leds to more peaceful/safe situations.
+# dont USE NEGATIVE, use a number that goes from 0 to 10 etc.
+/\
+\/
+random()
+
+// while z != None:
+//  
+//  
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
 
 Ideas:
 Create a RPG (focused on fighting/inventory/character)
