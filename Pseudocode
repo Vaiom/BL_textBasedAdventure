@@ -33,13 +33,15 @@ Your objective is to find any means escaping the spaceship.
 # Have a dictionary that stores items with respective items.
 
 // let variable = a
-#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)
+#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)) [.75,1.5
 
 #negative leads to more dangerous situations, positive leds to more peaceful/safe situations.
 # dont USE NEGATIVE, use a number that goes from 0 to 10 etc.
 /\
 \/
 random()
+
+coefficient factor
 
 // while z != None:
 //  
@@ -61,7 +63,7 @@ random()
 //
 //
 
-
+///// //  \\  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
