@@ -7,7 +7,6 @@
 # Goals:
 # - 7 endings
 # - include a system that can increase/decrease the likelihood of a specific situation(s) happening, based on your choices in the story.
-# - use a loop as the "core" of the program
 
 """
 Main Story:
@@ -17,92 +16,89 @@ Your objective is to find any means escaping the spaceship.
 """
 
 ##########################################################################################################
-# pseudocode the main function of the game. (As of September 20th, 2021)
+# Main function of the game (in pseudocode). (As of September 20th, 2021)
+# EVERYTHING IS SUBJECT TO CHANGE
+##########################################################################################################
 
-// let user_inventory = (...) < - list
-# Have a list that stores objects/items into the user's inventory (default would be none)
+# Have a varible that stores the player's health (you instantly lose once the hp reaches 0)
+// hp = 5 (default is 5)
 
-// have a dictionary called - items = {...} < - dictionary
-# Have a dictionary that stores items with respective items (particularly weapons with their damage values)
+# Have a variable that stores the player's stamina(energy) (used for performing certain actions)
+// energy = 100 (max is 100, lowest is 0) 
 
-// let variable = a
-#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)) [.75,1.5]
+# Have a list that stores objects/items into the user's inventory
+// user_inventory = (...) (there will be a weight limit of 30)
 
-#negative leads to more dangerous situations, positive leds to more peaceful/safe situations.
-# dont USE NEGATIVE, use a number that goes from 0 to 10 etc.
-/\
-\/
-random()
+# Have a dictionary that stores items with respective values (everything will have some weight, weapons with their damage values, or restoration items with their heal/energy values)
+// item_data = {...}
 
-coefficient factor
+
+
+# Have a variable that counts the player's progress (amount of situations they have encountered)
+// tally = 0 (default)
+
+# Have a coefficent whos values varies from 0.75 - 1.5
+// cofactor = random number between (.75-1.5) (HP will influence the minimum/maximum of the coefficient)
+
+# Have a variable that acounts for "tally" and "cofactor", producing a value that will dictate the flow of the program (what sitatuation the player encounters)
+# The higher the risk number, the more dangerous situations the player will face
+// risk = randomized value (between 0 + (3 + counter)) * cofactor
+# This will be a function
+
+
+
+
+
+
+# Have a variable that controls the flow of the program (specifically the loop block)
+// omega = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+//situation#():
+  menu()
+
+
+
+
+
+
+
+
+# While loop block that controls execution flow
+# Risk values varies from 0 to infinity
+# Will execute a specific situation (functions)
 
 // while z != None:
 
-
-hitpoints = 3
-counter=0
-range_max = 1501
-
-range_min = 750 + 50*counter
-if range_min >= range_max:
-  range_min = range_max - 1
-
-
-
-x = (random.randrange(range_min,range_max))/1000
-
-a = random.randrange(0,9,1)
-y = a*x
-
-print(a)
-print(x)
-print(y)
-
-if y <1:
-  print("lower than 1")
-elif y <2:
-  print("lower than 2")
-elif y <3:
-  print("lower than 3")
-elif y <4:
-  print("lower than 4")
-elif y <5:
-  print("lower than 5")
-elif y <6:
-  print("lower than 6")
-elif y <7:
-  print("lower than 7")
-elif y <8:
-  print("lower than 8")
-elif y <9:
-  print("lower than 9")
-elif y <10:
-  print("lower than 10")
-else:
-  print("10 or higher")
-
-//  
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-///// //  \\  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//  if risk <1:
+//    situation #()
+//  elif risk <2:
+//    situation #()
+//  elif y <3:
+//    situation #()
+//  ...
+//  ...
+//  ...
+//  ...
+//  ...
+//  ...
+//  elif y <10:
+//    situation #()
+//  else:
+//    situation #()
 
 
 
-Ideas:
-Create a RPG (focused on fighting/inventory/character)
-Create a story-based adventure game (focused on story, choices impacts later player’s decisions)
+# Once out of loop
+// exit()
