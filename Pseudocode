@@ -1,39 +1,32 @@
 #---------------------------------------------------
-# Python Pseudocode - Text-Based Adventure Game (Seven Flights)
+# Python Pseudocode - Text-Based Adventure Game
 # Bryant Liu
-# September #, 2021
+# September 20, 2021
 #---------------------------------------------------
-
 
 # Goals:
 # - 7 endings
 # - include a system that can increase/decrease the likelihood of a specific situation(s) happening, based on your choices in the story.
 # - use a loop as the "core" of the program
 
-
-
-
 """
 Main Story:
-
 You and a crewmate are stranded on a unknown alien spaceship.
 You and your crewmate decided to split off.
 Your objective is to find any means escaping the spaceship.
-
 """
 
-
-
-##########################################################################################################pseudocode the main function of the game.
+##########################################################################################################
+# pseudocode the main function of the game. (As of September 20th, 2021)
 
 // let user_inventory = (...) < - list
 # Have a list that stores objects/items into the user's inventory (default would be none)
 
 // have a dictionary called - items = {...} < - dictionary
-# Have a dictionary that stores items with respective items.
+# Have a dictionary that stores items with respective items (particularly weapons with their damage values)
 
 // let variable = a
-#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)) [.75,1.5
+#changes the value into a negative or positive by a certain about (max two decimal places, ie (1.25)) [.75,1.5]
 
 #negative leads to more dangerous situations, positive leds to more peaceful/safe situations.
 # dont USE NEGATIVE, use a number that goes from 0 to 10 etc.
@@ -44,7 +37,50 @@ random()
 coefficient factor
 
 // while z != None:
-//  
+
+
+hitpoints = 3
+counter=0
+range_max = 1501
+
+range_min = 750 + 50*counter
+if range_min >= range_max:
+  range_min = range_max - 1
+
+
+
+x = (random.randrange(range_min,range_max))/1000
+
+a = random.randrange(0,9,1)
+y = a*x
+
+print(a)
+print(x)
+print(y)
+
+if y <1:
+  print("lower than 1")
+elif y <2:
+  print("lower than 2")
+elif y <3:
+  print("lower than 3")
+elif y <4:
+  print("lower than 4")
+elif y <5:
+  print("lower than 5")
+elif y <6:
+  print("lower than 6")
+elif y <7:
+  print("lower than 7")
+elif y <8:
+  print("lower than 8")
+elif y <9:
+  print("lower than 9")
+elif y <10:
+  print("lower than 10")
+else:
+  print("10 or higher")
+
 //  
 //
 //
