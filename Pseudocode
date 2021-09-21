@@ -16,7 +16,7 @@ Your objective is to find any means escaping the spaceship.
 """
 
 ##########################################################################################################
-# Main function of the game (in pseudocode). (As of September 20th, 2021)
+# Main function of the game (in pseudocode). (As of September 21th, 2021)
 # EVERYTHING IS SUBJECT TO CHANGE
 ##########################################################################################################
 
@@ -45,21 +45,24 @@ Your objective is to find any means escaping the spaceship.
 // risk = randomized value (between 0 + (3 + counter)) * cofactor
 # This will be a function
 
-
-
-
-
-
 # Have a variable that controls the flow of the program (specifically the loop block)
 // omega = 0
 
-# This function creates the text UI for the player.
-//menu(...,...,...):
 
 
 
-
-
+# This function creates the text UI for the player
+# It takes in parameters and adjusts the user options accordingly
+//menu(a,b,c):
+//if a = ?:
+//  ...
+//elif b = ?:
+//  ...
+//elif c = ?:
+//  ...
+//else:
+//  repeat menu
+# Will return a value for the situation#() function to interpret
 
 
 
@@ -68,10 +71,16 @@ Your objective is to find any means escaping the spaceship.
 # There will be a function for each sitatuation
 # The basic layout is as follows
 //situation#():
+// a = ...
+// b = ...
+// c = ...
+//menu(a,b,c)
+// ...
+// ...
+# These lines of codes will adjust hp, energy, user_inventory, and or tally
 
-//menu()
-
-
+# Some situations will involve choices where it is restricted by your energy, or an item from user_inventory
+# The last few highest numbered situations will be the ones leading to endings 
 
 
 
@@ -79,10 +88,10 @@ Your objective is to find any means escaping the spaceship.
 
 
 # While loop block that controls execution flow
-# Risk values varies from 0 to infinity
+# Risk values varies from 0 to ?
 # Will execute a specific situation (functions)
 
-// while z != None:
+// while omega != None:
 
 //  if risk <1:
 //    situation #()
