@@ -53,6 +53,8 @@ Your objective is to find any means escaping the spaceship.
 # Have a variable that controls the flow of the program (specifically the loop block)
 // omega = 0
 
+# This function creates the text UI for the player.
+//menu(...,...,...):
 
 
 
@@ -63,10 +65,11 @@ Your objective is to find any means escaping the spaceship.
 
 
 
-
-
+# There will be a function for each sitatuation
+# The basic layout is as follows
 //situation#():
-  menu()
+
+//menu()
 
 
 
