@@ -51,3 +51,4 @@ def situation1():
     menu(situText)
 
 situation1()
+ 
