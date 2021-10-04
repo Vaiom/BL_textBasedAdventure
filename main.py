@@ -5,7 +5,24 @@
 # Name: Bryant Liu
 # Description: Main Game
 #==============================================================
-
+#CHANGELOG
+#==============================================================
+#2021-10-04 / Added code from "menu.py" (now deleted)
+#           / Added dictionaries
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#===============================================================
 
 inventory_data = {"sword": 3}
 location_data = 
