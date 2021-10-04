@@ -5,7 +5,7 @@
 # Name: Bryant Liu
 # Description: Main Game
 #==============================================================
-#CHANGELOG
+#CHANGELOG (LATEST AT THE TOP)
 #==============================================================
 #2021-10-04 / Added code from "menu.py" (now deleted)
 #           / Added dictionaries
