@@ -7,14 +7,17 @@ CHANGELOG:
 3. Added "CHANGELOG.md"
 4. Added ".replit"
 5. Changed "Pseudocode" to "Pseudocode.md"
+
 ===
 2021-09-22
 
 1. Created "menu.py"
+
 ===
 2021-09-21
 
 1. Modified and improved "Pseudocode"
+
 ===
 2021-09-16
 
