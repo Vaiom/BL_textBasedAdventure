@@ -1,11 +1,13 @@
 # CHANGELOG:
 
-### 2021-10-04
+### 2021-10-05
+* Modified "main.py"
 
+### 2021-10-04
+* Created "CHANGELOG.md"
+* Created ".replit"
 * Removed "menu.py" and moved code to a new file called "main.py"
 * Added dictionaries to code
-* Added "CHANGELOG.md"
-* Added ".replit"
 * Changed "Pseudocode" to "Pseudocode.md"
 
 ### 2021-09-22

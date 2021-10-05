@@ -7,6 +7,7 @@
 #==============================================================
 #CHANGELOG (LATEST AT THE TOP)
 #==============================================================
+#2021-10-05 / Modified "main.py" (this file)
 #2021-10-04 / Added code from "menu.py" (now deleted)
 #           / Added dictionaries
 #
@@ -24,10 +25,14 @@
 #
 #===============================================================
 
-inventory_data = {"sword": 3}
-location_data = 
+character_data ={}
+inventory_data = {"weapons":{"sword": 3,"gun": 5,},}
+location_data = {}
+
+print(inventory_data["weapons"["sword"]])
 
 
+"""
 enemies_data = {"slime": 5}
 
 
@@ -41,9 +46,10 @@ userSTA = 100
 
 
 def lineBreak(width = None):
+  Function that prints a "bar of line", which makes the text UI easier to read.
   if width == None:
     print("--------------------------------------------------")
-  if width == 1:
+  if width == 2:
     print("==================================================")
 
 def menu(text = None, options1 = None, options2 = None, options3 = None, options4 = None, options5 = None):
@@ -100,11 +106,8 @@ situation1()
 
 
 
-# Function that prints a "bar of line", which makes the text UI easier to read.
 
 
-def lineBreak():
-    print("==================================================")
 
 
 # Function for operating the menu
@@ -146,3 +149,7 @@ def situation1():
     menu(situText)
 
 situation1()  
+
+
+
+"""
