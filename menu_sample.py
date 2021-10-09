@@ -52,7 +52,7 @@ def menu(text=None):
         elif userInput == "4":
             print("   |You have rested and recovered stamina!")
         elif userInput == "5":
-            print("   |You have quited!")
+            print("   |You have quit!")
             lineBreak()
             quit()
         else:
@@ -66,4 +66,3 @@ def situation1():
 
 
 situation1()
-
