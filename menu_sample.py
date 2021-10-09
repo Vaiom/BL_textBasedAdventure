@@ -8,9 +8,9 @@
 # CHANGELOG (LATEST AT THE TOP)
 # ==============================================================
 # 2021-10-08 / Recreated and modified "main.py" (this file)
-#           / Added a changelog inside file
-#           / Fixed a function breaking indentation error
-#           / Fixed docstrings, blank lines to improve readability
+#            / Added a changelog inside file
+#            / Fixed a function breaking indentation error
+#            / Fixed docstrings, blank lines to improve readability
 # 2021-10-04 / Removed "main.py" (this file)
 # 2021-09-22 / Created "main.py" (this file)
 # ===============================================================
