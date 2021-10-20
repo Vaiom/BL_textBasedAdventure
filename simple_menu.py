@@ -1,25 +1,25 @@
-# Course: CS 30
-# Period: 1
-# Date created: 22 October 2021
-# Date last modified: 08 October 2021
+# Course: CS30 P1
 # Name: Bryant Liu
-# Description: menu sample
+# Date created: 2021-09-22
+# Description: RPG Simple Menu Assignment
 # ==============================================================
-# CHANGELOG (LATEST AT THE TOP)
+# YYYY-MM-DD / CHANGELOG (LATEST AT THE TOP)
 # ==============================================================
-# 2021-10-08 / Recreated and modified "main.py" (this file)
-#            / Added a changelog inside file
-#            / Fixed a function breaking indentation error
-#            / Fixed docstrings, blank lines to improve readability
-# 2021-10-04 / Removed "main.py" (this file)
-# 2021-09-22 / Created "main.py" (this file)
+# 2021-10-14 / Modified "simple_menu.py" (this file)
+#               / Adjusted formatting
+#               / Changed names of functions and variables to improve readability
+# 2021-10-08 / Modified "simple_menu.py" (this file)
+#               / Added a changelog inside file
+#               / Fixed a function breaking indentation error
+#               / Fixed docstrings, blank lines to improve readability
+# 2021-09-22 / Created "simple_menu.py" (this file)
 # ===============================================================
 
 
-def lineBreak(width=1, times=1):
+def line(width=1, repetition=1):
     """Function that can print multiple "bar of lines",
-        which makes the text UI easier to read."""
-    for repeat in range(0, (times)):
+       which makes the text UI easier to read."""
+    for repeat in range(0, (repetition)):
         if width == 0:
             print("- - - - - - - - - - - - - - - - - - - - - - - - - ")
         if width == 1:
@@ -31,17 +31,17 @@ def lineBreak(width=1, times=1):
 def menu(text=None):
     """Function for opearting the menu"""
     while True:
-        lineBreak()
+        line()
         print(text)
-        lineBreak(0)
+        line(0)
         # List and for loop to print available actions.
         list = ["status", "inventory", "attack", "rest", "quit"]
         lineNo = 1
         for e in list:
             print("(" + str(lineNo) + ")-" + e)
             lineNo = lineNo + 1
+        line(0)
         # Asks for the user's input.
-        lineBreak(0)
         userInput = input(" ^ |--insert-here-->#")
         if userInput == "1":
             print("   |You checked your status!")
@@ -53,7 +53,7 @@ def menu(text=None):
             print("   |You have rested and recovered stamina!")
         elif userInput == "5":
             print("   |You have quit!")
-            lineBreak()
+            line()
             quit()
         else:
             print("   |>>> INVALID <<<")
@@ -61,8 +61,9 @@ def menu(text=None):
 
 def situation1():
     """Function that calls the menu() function with text parameter"""
-    situText = "You have encountered a slime! What do you do?"
-    menu(situText)
+    situ_text = "You have encountered a slime! What do you do?"
+    menu(situ_text)
 
 
 situation1()
+
