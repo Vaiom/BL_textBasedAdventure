@@ -190,11 +190,11 @@ def exit_menu():
 
 def help_menu(name):
     """Shows text to help user."""
-    a = f"""Using WASD controls, move your"
-character to the end tile!."
-nYou may encounter a door"
-nin which you will need to"
-find a key to unlock it!"
+    a = f"""Using WASD controls, move your
+character to the end tile!.
+You may encounter a door
+in which you will need to
+find a key to unlock it!
 Good Luck {name}!"""
     ft(title="HELP MENU:",
        pre_text=a,
