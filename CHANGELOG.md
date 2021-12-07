@@ -1,5 +1,10 @@
 # CHANGELOG:
 
+### 2021-12-07 (Version 0.03)
+* Added classes to characters and location.
+* Added WASD movement to map.
+* Added basic functionality for a start tile and an end tile.
+
 ### 2021-11-16 (Version 0.02)
 * Added functionality to all files and adjusted formatting to comply with PEP 8
 * Added colors for easy navigation
